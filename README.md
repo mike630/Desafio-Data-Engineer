@@ -125,9 +125,9 @@ A tabela desenvolvida nesta camada deverá atender a seguinte estrutura:
 |latitude|Deverá conter coordenada geográfica de latitude|double|
 |longitude|Deverá conter coordenada geográfica de longitude|double|
 |data|Deverá conter a data do registro|timestamp|
-|quantidade_confirmados|Deverá conter a quantidade de casos Confirmados na data específica|long|
-|quantidade_mortes|Deverá conter a quantidade de Mortes na data específica|long|
-|quantidade_recuperados|Deverá conter a quantidade de Recuperados na data específica|long|
+|quantidade_confirmados|Deverá conter a quantidade de **novos** casos Confirmados na data específica|long|
+|quantidade_mortes|Deverá conter a quantidade de **novas** Mortes na data específica|long|
+|quantidade_recuperados|Deverá conter a quantidade de **novos** Recuperados na data específica|long|
 
 ### Camada Refined
 A solução deverá ser capaz de processar os dados contidos na tabela anteriormente criada na camada **raw**, efetuando uma agregação e cálculo das médias móveis dos 3 tipos de casos nos últimos 7 dias, armazenando o seu resultado no diretório **datalake/refined**.
