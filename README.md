@@ -142,9 +142,10 @@ A tabela desenvolvida nesta camada deverá atender a seguinte estrutura:
 |media_movel_recuperados|Deverá conter a média móvel dos últimos 7 dias de Recuperações até data específica|long|
 
 ### Armazenamento de Dados
-- Os dados nas camadas **raw** e **refined** devem ser armazenados no formato PARQUET
-- Os dados nas camadas **raw** deverão estar particionados por Ano e Mês
-- Os dados nas camadas **raw** e **refined** deverão conter apenas 1 arquivo PARQUET em cada Partição.
+- Os dados nas camadas **raw** e **refined** devem ser armazenados no formato **PARQUET**
+- Os dados nas camadas **raw** deverão estar particionados por **Ano e Mês**
+- Os dados nas camadas **refined** deverão estar particionados somente por **Ano**
+- Os dados nas camadas **raw** e **refined** deverão conter apenas 1 arquivo **PARQUET** em cada Partição.
 
 Fique livre para usar a sua criatividade e extrair novos insights! :smiley:
 
@@ -152,9 +153,8 @@ Fique livre para usar a sua criatividade e extrair novos insights! :smiley:
 
 Para a entrega da solução, os seguintes artefatos deverão estar presentes no seu repositório:
 
-- Arquivos fonte da solução do SSDT.
-- Scripts de criação de tabelas no banco de dados (DDL).
-- Arquivo do PowerBI (.pbix) funcional com o dataset importado.
+- Código fonte desenvolvido na pasta **dags**.
+- Arquivos **.parquet** das camadas **raw** e **refined** na pasta **datalake**
 
 Ao finalizar, envie um email para o o recrutador responsável pelo seu processo seguindo o padrão de assunto: "Prova 1 - [Nome] - [Tecnologia]".
 
